@@ -1,0 +1,130 @@
+/********** hoja de estilo para la presentación de halloween ************/
+
+
+@font-face {
+    font-family: halloween;
+    src: url("../fonts/ElderGodsBB.ttf");
+}
+    body {background-color: black;}
+
+    #container { width: 1920px; /* ancho de la imagen */
+                height: 1234px; /* alto de la imagen */
+                margin: auto; /* centrado de la escena */
+                background-image: url("../images/imagenpricipal.png");
+                font-family: halloween;
+                font-size: 4em;
+                color: rgb(255, 255, 255);
+                position: relative; /* el container se mueve*/
+            }
+
+    #p1, #p2, #p3, #p4, #p5 {text-shadow: 5px 5px 5px red;}
+
+    #p1 {position: absolute;/* fijado dentro de su contenedor */
+        top: 10px; /* coordenada vertical */
+        left: 200px; /* coordenada horizontal */
+        }
+    #p2 {position: absolute;
+        top: 0px;
+        left: 1400px;
+    }
+    #p3 {position: absolute;
+        top: 550px;
+        left: 1400px;
+    }
+    #p4 {position: absolute;
+        top: 600px;
+        left: 200px;
+    }
+    #p5 {position: absolute;
+        top: 1000px;
+        left: 700px;
+    }
+
+    #calavera {position: absolute;
+        top: 80px;
+        left: 1110px;
+
+        width: 180px;
+        height: 230px;
+        /* border: 1px solid white;  luego lo borro */
+            }
+    #murcielagos {position: absolute;
+        top: 80px ;
+        left: 1110px;
+        visibility: hidden; /* los murciélagos de entrada no se ven*/
+            }
+    
+    #cabeza{position: absolute;
+        top: 270px;
+        left: 430px;
+
+        width: 350px;
+        height: 300px;
+        /*border: 1px solid white;*/
+    }
+    #calabaza {position: absolute;
+        top: 0px;
+        left: 230px;
+        visibility: hidden;
+        width: 1430px;
+        height: 1010px;
+            }
+    
+    #casa {position: absolute;
+        top: 230px;
+        left: 1640px;
+                
+        width: 250px;
+        height: 320px;
+            }
+
+    #calabaza1 {position: absolute;
+        top: 900px;
+        left: 80px;
+                
+        width: 150px;
+        height: 220px;
+            }
+    #calabaza2 {position: absolute;
+            top: 770px;
+            left: 230px;
+                    
+            width: 150px;
+            height: 150px;
+                }
+    #calabaza3 {position: absolute;
+        top: 900px;
+        left: 1150px;
+                
+        width: 120px;
+        height: 100px;
+            }
+    #calabaza4 {position: absolute;
+        top: 930px;
+        left: 1340px;
+                
+        width: 80px;
+        height: 80px;
+            }
+    #calabaza5 {position: absolute;
+        top: 980px;
+        left: 1500px;
+                
+        width: 200px;
+        height: 150px;
+            }
+    #calabaza6 {position: absolute;
+        top: 790px;
+        left: 1600px;
+                
+        width: 180px;
+        height: 160px;
+            }
+    #calabaza7 {position: absolute;
+        top: 970px;
+        left: 1700px;
+                
+        width: 140px;
+        height: 180px;
+            }
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <!-- enlazo un javascript-->
+    <script src="./javascript/halloween.js"></script>
+</head>
+<body>
+    <audio id="sonidofondo">
+        <source src="./sounds/halloween-theme.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sonidocalabaza">
+        <source src="./sounds/Dark_Laugh.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="grito">
+        <source src="./sounds/sonido1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bats">
+        <source src="./sounds/bats.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="calabazas">
+        <source src="./sounds/risacalabazas.mp3" type="audio/mpeg">
+    </audio>
+    <div id="container" onmouseover="sonar('sonidofondo')">
+        <p id="p1">Scary halloween Party</p>
+        <!-- efecto aparecer murciélagos y sonar grito-->
+        <p id="p2">The skull is their home</p>
+        <p id="p3">If you touch the house you will kill it</p>
+        <p id="p4">Don't touch his face</p>
+        <p id="p5">The pumpkins laugh a lot</p>
+        <div id="calavera" onmouseover="mostrar('murcielagos'); sonar('bats')">
+
+        </div> <!-- 1- creo un div vacío -->
+        <img id="murcielagos" src="./images/murcielagos.gif">
+        <div id="cabeza" onclick="mostrar('calabaza'); sonar('sonidocalabaza')" onmouseout="ocultar('calabaza')">
+
+        </div>
+        <img id="calabaza" src="./images/horror-scary.gif"> 
+        <div id="casa" onclick="sonar('grito')">
+
+        </div>
+        <div id="calabaza1" onclick="sonar('calabazas')">
+        </div>
+        <div id="calabaza2" onclick="sonar('calabazas')">
+        </div>
+        <div id="calabaza3" onclick="sonar('calabazas')">
+        </div>
+        <div id="calabaza4" onclick="sonar('calabazas')">
+        </div>
+        <div id="calabaza5" onclick="sonar('calabazas')">
+        </div>
+        <div id="calabaza6" onclick="sonar('calabazas')">
+        </div>
+        <div id="calabaza7" onclick="sonar('calabazas')">
+        </div>
+    </div>
+</body>
+</html>
